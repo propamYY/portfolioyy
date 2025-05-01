@@ -215,11 +215,11 @@ export default function Home() {
             variants={itemVariants}
             className="flex justify-center gap-4"
           >
-            <a href="#contact" className="btn-primary group bg-gray-900 text-white hover:bg-gray-800">
+            <a href="#contact" className="btn-primary group">
               <span className="relative z-10">Связаться</span>
               <div className="absolute inset-0 bg-white/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
             </a>
-            <a href="#projects" className="btn-secondary group bg-gray-100 hover:bg-gray-200">
+            <a href="#projects" className="btn-secondary group">
               <span className="relative z-10 group-hover:text-gray-900 transition-colors duration-300">Проекты</span>
             </a>
           </motion.div>
