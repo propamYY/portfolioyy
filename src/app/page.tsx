@@ -99,28 +99,28 @@ export default function Home() {
                 href="#about" 
                 className="btn-primary group bg-white text-black hover:bg-white/90"
               >
-                <span className="relative z-10">Обо мне</span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300">Обо мне</span>
                 <div className="absolute inset-0 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
               </a>
               <a 
                 href="#skills" 
                 className="btn-primary group bg-white text-black hover:bg-white/90"
               >
-                <span className="relative z-10">Мой Стек</span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300">Мой Стек</span>
                 <div className="absolute inset-0 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
               </a>
               <a 
                 href="#projects" 
                 className="btn-primary group bg-white text-black hover:bg-white/90"
               >
-                <span className="relative z-10">Мои проекты</span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300">Мои проекты</span>
                 <div className="absolute inset-0 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
               </a>
               <a 
                 href="#contact" 
                 className="btn-primary group bg-white text-black hover:bg-white/90"
               >
-                <span className="relative z-10">Связаться со мной</span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300">Связаться со мной</span>
                 <div className="absolute inset-0 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
               </a>
             </div>
@@ -922,7 +922,7 @@ export default function Home() {
               href="#contact" 
               className="btn-primary group"
             >
-              <span className="relative z-10">Запланировать обзор кода</span>
+              <span className="relative z-10 group-hover:text-black transition-colors duration-300">Запланировать обзор кода</span>
               <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
             </a>
           </motion.div>

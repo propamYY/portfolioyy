@@ -8,7 +8,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/portfolioyy',
-  assetPrefix: '/portfolioyy/',
+  assetPrefix: '/portfolioyy'
 };
 
 module.exports = nextConfig; 
