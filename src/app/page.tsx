@@ -37,7 +37,7 @@ export default function Home() {
           <div className="flex flex-col items-center mb-16">
             <div className="relative w-64 h-20 mb-8">
               <Image
-                src="/forte.svg"
+                src="/portfolioyy/forte.svg"
                 alt="ForteBank Logo"
                 fill
                 className="object-contain"
@@ -154,7 +154,7 @@ export default function Home() {
           >
             <div className="relative w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-2xl animate-float">
               <Image
-                src="/portfolio.JPG"
+                src="/portfolioyy/portfolio.JPG"
                 alt="Yernur Yelaman"
                 fill
                 sizes="160px"
@@ -254,7 +254,7 @@ export default function Home() {
           >
             <div className="relative w-72 h-72 overflow-hidden rounded-full shadow-2xl border-4 border-white">
               <Image
-                src="/portfolio.JPG"
+                src="/portfolioyy/portfolio.JPG"
                 alt="Yernur Yelaman - Frontend Developer"
                 fill
                 sizes="(max-width: 768px) 100vw, 288px"
@@ -283,7 +283,7 @@ export default function Home() {
           className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl mb-12"
         >
           <Image
-            src="/kazakhstan.jpg"
+            src="/portfolioyy/kazakhstan.jpg"
             alt="Beautiful view of Kazakhstan"
             fill
             sizes="(max-width: 1280px) 100vw, 1280px"
@@ -374,7 +374,7 @@ export default function Home() {
           </div>
           <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl order-1 md:order-2">
             <Image
-              src="/DSC08375-copy-scaled.jpg"
+              src="/portfolioyy/DSC08375-copy-scaled.jpg"
               alt="Astana IT University"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -582,7 +582,7 @@ export default function Home() {
           >
             <div className="relative h-48 overflow-hidden">
               <Image
-                src="/oku_lms.png"
+                src="/portfolioyy/oku_lms.png"
                 alt="Oku LMS Project"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -665,7 +665,7 @@ export default function Home() {
           >
             <div className="relative h-48 overflow-hidden">
               <Image
-                src="/kk.png"
+                src="/portfolioyy/kk.png"
                 alt="KK Front Project"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -748,7 +748,7 @@ export default function Home() {
           >
             <div className="relative h-48 overflow-hidden">
               <Image
-                src="/jbm.png"
+                src="/portfolioyy/jbm.png"
                 alt="Jobam Project"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -831,7 +831,7 @@ export default function Home() {
           >
             <div className="relative h-48 overflow-hidden">
               <Image
-                src="/kompklub.png"
+                src="/portfolioyy/kompklub.png"
                 alt="KompKlub Project"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
