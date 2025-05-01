@@ -8,11 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
-        accent: 'var(--color-accent)',
-        dark: 'var(--color-dark)',
-        light: 'var(--color-light)',
+        primary: '#4F46E5',
+        secondary: '#7C3AED',
+        accent: '#EC4899',
+        dark: '#1a1a1a',
+        light: '#f5f5f5',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       boxShadow: {
         'custom': '0 4px 14px 0 rgba(79, 70, 229, 0.2)',
