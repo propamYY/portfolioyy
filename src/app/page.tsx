@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaServer, FaPlane, FaGraduationCap } from "react-icons/fa";
 import Image from "next/image";
 
 export default function Home() {
@@ -100,7 +100,7 @@ export default function Home() {
             className="relative inline-block mb-8"
           >
             <span className="text-xl md:text-2xl text-gray-700 font-medium">
-              Frontend Developer
+              Fullstack Developer
             </span>
             <motion.div
               initial={{ width: 0 }}
@@ -137,11 +137,11 @@ export default function Home() {
             className="card"
           >
             <p className="text-lg mb-4">
-            Привет! Меня зовут Ернур, я фронтенд-разработчик и работаю с React.js. Люблю создавать удобные и современные веб-приложения, которые действительно помогают людям и бизнесу.
+            Привет! Меня зовут Ернур, я fullstack-разработчик: пишу frontend на React.js и Next.js, а backend — на PHP и Laravel. Люблю создавать удобные и современные веб-приложения, которые действительно помогают людям и бизнесу.
 
-У меня есть опыт разработки CRM-систем, платформ для соревнований, LMS, а также Telegram-ботов, которые используют целые команды. Постоянно учусь новому и стараюсь делать интерфейсы не только красивыми, но и удобными.
+За это время реализовал немало проектов для турфирм и CRM-систем для автоматизации продаж и внутренних процессов, а также платформы для соревнований и LMS. Уже полтора года развиваю backend крупной системы для управления школьными кампусами.
 
-Мне важно, чтобы продукт был полезным и работал стабильно в продакшене.
+Постоянно учусь новому и стараюсь делать продукты не только красивыми, но и удобными, надёжными и стабильно работающими в продакшене.
             </p>
           </motion.div>
           <motion.div
@@ -154,7 +154,7 @@ export default function Home() {
             <div className="relative w-72 h-72 overflow-hidden rounded-full shadow-2xl border-4 border-white">
               <Image
                 src="/portfolioyy/portfolio.JPG"
-                alt="Yernur Yelaman - Frontend Developer"
+                alt="Yernur Yelaman - Fullstack Developer"
                 fill
                 sizes="(max-width: 768px) 100vw, 288px"
                 quality={100}
@@ -311,9 +311,9 @@ export default function Home() {
           <div className="relative">
             {/* Horizontal Line with Gradient */}
             <div className="absolute top-12 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary rounded-full"></div>
-            
+
             {/* Timeline Items */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
               {[
                 {
                   year: "2022",
@@ -335,9 +335,15 @@ export default function Home() {
                 },
                 {
                   year: "2025",
-                  title: "Коммерческие проекты",
-                  description: "Работа над реальными проектами",
-                  skills: ["Full Stack", "Security"]
+                  title: "Backend & Laravel",
+                  description: "Ушёл в fullstack: PHP, Laravel, CRM-системы и проекты для турфирм",
+                  skills: ["PHP", "Laravel"]
+                },
+                {
+                  year: "2025-2026",
+                  title: "Система для кампусов школ",
+                  description: "Полтора года развиваю backend крупной системы управления школьными кампусами",
+                  skills: ["Laravel", "MySQL"]
                 }
               ].map((item, index) => (
                 <div key={item.year} className="relative pt-8">
@@ -406,10 +412,11 @@ export default function Home() {
           <h2 className="section-title text-gradient mb-16">Мой стек технологий</h2>
           
           {/* Main Technologies */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
             {[
               { name: "React", level: "Продвинутый", years: "2+ года" },
               { name: "Next.js", level: "Продвинутый", years: "1+ год" },
+              { name: "PHP / Laravel", level: "Продвинутый", years: "1.5+ года" },
               { name: "TypeScript", level: "Средний", years: "1+ год" },
               { name: "Tailwind CSS", level: "Продвинутый", years: "2+ года" }
             ].map((tech, index) => (
@@ -446,7 +453,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {[
               "HTML5", "CSS3", "JavaScript", "ES6+", "Git", "GitHub",
-              "REST API", "Postman", "Docker", "PHP", "Python", "FastAPI"
+              "REST API", "Postman", "Docker", "Laravel", "MySQL", "Python", "FastAPI"
             ].map((skill, index) => (
               <motion.div
                 key={skill}
@@ -799,6 +806,159 @@ export default function Home() {
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                   </svg>
                 </a>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* CRM Systems */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="project-card"
+          >
+            <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/5 flex items-center justify-center">
+              <FaServer className="w-20 h-20 text-primary/30" />
+              <span className="absolute top-3 left-3 px-3 py-1 text-xs bg-white/80 backdrop-blur rounded-full text-primary shadow-sm">Закрытый репозиторий</span>
+            </div>
+            <div className="p-6">
+              <div className="flex items-center gap-2 mb-2">
+                <h3 className="text-xl font-semibold">CRM-системы</h3>
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Закрытый</span>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Несколько CRM-решений на Laravel для автоматизации продаж, учёта клиентов и внутренних бизнес-процессов:
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>Управление сделками, клиентами и воронкой продаж</li>
+                  <li>Ролевая модель доступа и аутентификация</li>
+                  <li>REST API для интеграций с внешними сервисами</li>
+                  <li>Отчётность и аналитические панели</li>
+                </ul>
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-2 py-1 bg-gray-100 text-sm rounded">PHP</span>
+                <span className="px-2 py-1 bg-gray-100 text-sm rounded">Laravel</span>
+                <span className="px-2 py-1 bg-gray-100 text-sm rounded">MySQL</span>
+                <span className="px-2 py-1 bg-gray-100 text-sm rounded">REST API</span>
+              </div>
+              <div className="flex gap-4">
+                <button
+                  className="text-primary hover:underline flex items-center gap-2 group"
+                  onClick={() => {/* Add modal or dialog to show detailed info */}}
+                >
+                  <span>Подробнее</span>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Tour Agency Platforms */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="project-card"
+          >
+            <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/5 flex items-center justify-center">
+              <FaPlane className="w-20 h-20 text-primary/30" />
+              <span className="absolute top-3 left-3 px-3 py-1 text-xs bg-white/80 backdrop-blur rounded-full text-primary shadow-sm">Закрытый репозиторий</span>
+            </div>
+            <div className="p-6">
+              <div className="flex items-center gap-2 mb-2">
+                <h3 className="text-xl font-semibold">Платформы для турфирм</h3>
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Закрытый</span>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Backend-решения для туристических компаний на PHP/Laravel:
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>Бронирование туров и обработка заявок клиентов</li>
+                  <li>Учёт туров, дат, мест и доступности</li>
+                  <li>Интеграция с платёжными и внешними сервисами</li>
+                  <li>Админ-панель для менеджеров и агентов</li>
+                </ul>
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-2 py-1 bg-gray-100 text-sm rounded">PHP</span>
+                <span className="px-2 py-1 bg-gray-100 text-sm rounded">Laravel</span>
+                <span className="px-2 py-1 bg-gray-100 text-sm rounded">MySQL</span>
+                <span className="px-2 py-1 bg-gray-100 text-sm rounded">REST API</span>
+              </div>
+              <div className="flex gap-4">
+                <button
+                  className="text-primary hover:underline flex items-center gap-2 group"
+                  onClick={() => {/* Add modal or dialog to show detailed info */}}
+                >
+                  <span>Подробнее</span>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* School Campus Management System */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="project-card"
+          >
+            <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/5 flex items-center justify-center">
+              <FaGraduationCap className="w-20 h-20 text-primary/30" />
+              <span className="absolute top-3 left-3 px-3 py-1 text-xs bg-white/80 backdrop-blur rounded-full text-primary shadow-sm">Текущий проект · 1.5+ года</span>
+            </div>
+            <div className="p-6">
+              <div className="flex items-center gap-2 mb-2">
+                <h3 className="text-xl font-semibold">Система для кампусов школ</h3>
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">В разработке</span>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Уже полтора года развиваю backend крупной системы управления школьными кампусами:
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>Учёт учеников, классов и расписаний</li>
+                  <li>Ролевая модель доступа для администрации, учителей и родителей</li>
+                  <li>Финансовый учёт и отчётность</li>
+                  <li>REST API для мобильных и веб-клиентов</li>
+                </ul>
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-2 py-1 bg-gray-100 text-sm rounded">PHP</span>
+                <span className="px-2 py-1 bg-gray-100 text-sm rounded">Laravel</span>
+                <span className="px-2 py-1 bg-gray-100 text-sm rounded">MySQL</span>
+                <span className="px-2 py-1 bg-gray-100 text-sm rounded">REST API</span>
+              </div>
+              <div className="flex gap-4">
+                <button
+                  className="text-primary hover:underline flex items-center gap-2 group"
+                  onClick={() => {/* Add modal or dialog to show detailed info */}}
+                >
+                  <span>Подробнее</span>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
               </div>
             </div>
           </motion.div>
